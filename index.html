@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./day1_ass2.css" />
+    <script
+      src="https://kit.fontawesome.com/271fc71e05.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Jomhuria&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- <section id="main"> -->
+    <header>
+      <!-- <div > -->
+      <img
+        class="logo"
+        src="https://pbs.twimg.com/profile_images/378800000094871686/2a38da93b88efd478144312fb73a9298_400x400.jpeg"
+        alt=""
+      />
+      <!-- <img
+        class="logo"
+        src="data:image/jpeg;base64,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"
+        alt=""
+      /> -->
+      <!-- <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtiUUBlBHALRE7FT7Utu331HN4A47hHQt5zQ&usqp=CAU" alt="" /> -->
+      <!-- </div> -->
+      <div class="text">
+        <h1>Asmaa Badry</h1>
+        <h3>Full Stack Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt sed
+          veritatis architecto quam quod quae voluptatem suscipit et illo,
+        </p>
+      </div>
+    </header>
+    <section id="section">
+      <aside>
+        <div class="contact">
+          <h2>contact</h2>
+          <address><i class="fas fa-home"></i>123 park</address>
+          <h3><i class="fa-solid fa-mobile-screen"></i>123 456 7899</h3>
+          <h3><i class="fa-solid fa-envelope"></i>info@Noom</h3>
+          <h3><i class="fa-solid fa-link"></i>www.hloom.com</h3>
+          <time datetime="1996-6-2"
+            ><i class="fa-solid fa-calendar-days"></i>1996-6-2</time
+          >
+          <audio>
+            <!-- fallback -->
+            <source src="./audio/bgsound.mp3" />
+            <source src="./audio/bgsound.wav" />
+          </audio>
+        </div>
+        <div class="Languages">
+          <h2>Languages</h2>
+          <div class="lang">
+            <h4>English</h4>
+            <div class="the-progress">
+              <span
+                class="span-1"
+                style="width: 80%"
+                data-progress="80%"
+              ></span>
+            </div>
+          </div>
+          <div class="lang">
+            <h4>German</h4>
+            <div class="the-progress">
+              <span
+                class="span-2"
+                style="width: 55%"
+                data-progress="55%"
+              ></span>
+            </div>
+          </div>
+          <div class="lang">
+            <h4>Spanish</h4>
+            <div class="the-progress">
+              <span
+                class="span-3"
+                style="width: 70%"
+                data-progress="70%"
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="skills">
+          <h2>Skills</h2>
+          <div class="skill-container">
+            <div class="col">
+              <div class="skill">
+                <div class="content">
+                  <span>AI</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skill">
+                <div class="content">
+                  <span>Ps</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skill">
+                <div class="content">
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skill">
+                <div class="content">
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="outer-box">
+            <div class="inner-box">100%</div>
+          </div> -->
+        </div>
+        <div class="Online-info">
+          <h2>Online Info</h2>
+          <div class="info-container">
+            <div class="box">
+              <i class="fa-brands fa-facebook"></i>
+              <span>/hloom</span>
+            </div>
+            <div class="box">
+              <i class="fa-brands fa-google-plus"></i>
+              <span>/hloom</span>
+            </div>
+          </div>
+        </div>
+        <video
+          controls
+          width="300"
+          height="300"
+          loop
+          poster="./image/p.png"
+          muted
+        >
+          <!-- fallback -->
+          <source src="./video/sample.mp4" />
+          <source src="./video/sample.ogv" />
+          <source src="./video/sample.webm" />
+          <p>This is a video does not support in your browser.</p>
+        </video>
+      </aside>
+      <article>
+        <div class="achievements">
+          <h2>Achievements</h2>
+          <h3>2022 Lorem Project</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+          <h3>2020 Vivamus Project</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+          <h3>2018 Nunc Project</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+        </div>
+        <div class="education">
+          <h2>Education</h2>
+          <h3>2019-2022 ABC School</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+          <h3>2014-2019 Chio University</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+          <h3>2011-2014 ABC Studies</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+        </div>
+        <div class="work-experience">
+          <h2>Work-experience</h2>
+          <h3>2013-2015 ABC Company</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+          <h3>2010-2013 Zoom Company</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ad
+            eveniet quo quod, similique quaerat placeat! Facere porro beatae
+          </p>
+        </div>
+      </article>
+    </section>
+    <footer>.</footer>
+    <!-- </section> -->
+    <script src="./html5&css3.js"></script>
+  </body>
+</html>
